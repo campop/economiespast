@@ -147,6 +147,7 @@ class economiespast extends onlineAtlas
 			),
 			
 			// Colours based on: https://www.campop.geog.cam.ac.uk/research/projects/transport/data/population.html
+			'colourStopsIntervalsConsistent' => false,
 			'colourStops' => array (
 				'#ffffff',
 				'#ffffbe',
