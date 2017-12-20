@@ -221,10 +221,10 @@ class economiespast extends onlineAtlas
 	}
 	
 	
-	# Funders page
-	public function funders ()
+	# Acknowledgements page
+	public function acknowledgements ()
 	{
-		return parent::funders ($this->extendedApplicationRoot);
+		return parent::acknowledgements ($this->extendedApplicationRoot);
 	}
 }
 
