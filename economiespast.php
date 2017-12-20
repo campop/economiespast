@@ -146,19 +146,19 @@ class economiespast extends onlineAtlas
 				),
 			),
 			
-			// Colours based on: https://www.campop.geog.cam.ac.uk/research/occupations/futureplans/
+			// Colours based on: https://www.campop.geog.cam.ac.uk/research/projects/transport/data/population.html
 			'colourStops' => array (
 				'#ffffff',
-				'#fcfce2',
-				'#fcffc6',
-				'#c2fec0',
-				'#97cdf9',
-				'#4daffa',
-				'#4486ff',
-				'#6664df',
-				'#7e5496',
-				'#9c2160',
-				'#6a0450',
+				'#ffffbe',
+				'#ffebaf',
+				'#ffff73',
+				'#d1ff73',
+				'#a3ff73',
+				'#ffaa00',
+				'#ff7f7f',
+				'#e64c00',
+				'#df73ff',
+				'#4c0073',
 				'#000000',
 			),
 		);
