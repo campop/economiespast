@@ -12,7 +12,7 @@ class economiespast extends onlineAtlas
 			
 			// Application name
 			'applicationName' => 'Economies Past',
-			'pageHeader' => 'Economies Past',
+			'pageHeader' => 'Economies Past <img src="/images/beta.png" height="50" />',
 			
 			// Database
 			'database' => 'economiespast',
