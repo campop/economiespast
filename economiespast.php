@@ -45,6 +45,7 @@ class economiespast extends onlineAtlas
 			'closeName' => 'parish',
 			'closeZoom' => 10,
 			'closeField' => 'PARISH',
+			'farField' => 'SUBDIST',
 			
 			// Value representing 'Unknown' and the string it is converted to
 			'valueUnknown' => 1000,
