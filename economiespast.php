@@ -44,6 +44,7 @@ class economiespast extends onlineAtlas
 			'closeDatasets' => array (1851, 1861, 1881, 1901, 1911),
 			'closeName' => 'parish',
 			'closeZoom' => 10,
+			'closeField' => 'PARISH',
 			
 			// Value representing 'Unknown' and the string it is converted to
 			'valueUnknown' => 1000,
