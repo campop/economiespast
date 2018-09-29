@@ -216,6 +216,13 @@ class economiespast extends onlineAtlas
 	}
 	
 	
+	# Home page
+	public function home ($aboutPath = false)
+	{
+		return parent::home ($this->extendedApplicationRoot);
+	}
+	
+	
 	# About page
 	public function about ($path = false)
 	{
