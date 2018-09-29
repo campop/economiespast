@@ -217,28 +217,28 @@ class economiespast extends onlineAtlas
 	
 	
 	# About page
-	public function about ()
+	public function about ($path = false)
 	{
 		return parent::about ($this->extendedApplicationRoot);
 	}
 	
 	
 	# Resources page
-	public function resources ()
+	public function resources ($path = false)
 	{
 		return parent::resources ($this->extendedApplicationRoot);
 	}
 	
 	
 	# Acknowledgements page
-	public function acknowledgements ()
+	public function acknowledgements ($path = false)
 	{
 		return parent::acknowledgements ($this->extendedApplicationRoot);
 	}
 	
 	
 	# Contacts page
-	public function contacts ()
+	public function contacts ($path = false)
 	{
 		return parent::contacts ($this->extendedApplicationRoot);
 	}
