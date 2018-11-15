@@ -146,6 +146,12 @@ class economiespast extends onlineAtlas
 					'description' => '',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
 				),
+				
+				'_' => array (
+					'label' => '[Show background map only]',
+					'description' => 'Removes data from the map, showing only the background',
+					'intervals' => '',
+				),
 			),
 			
 			// Colours based on: https://www.campop.geog.cam.ac.uk/research/projects/transport/data/population.html
