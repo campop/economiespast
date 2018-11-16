@@ -183,27 +183,24 @@ class economiespast extends onlineAtlas
 	# Database structure
 	public function databaseStructureSpecificFields ()
 	{
-		# Return the SQL
-		return $sql = "
+		# Compile the SQL
+		$sql = "
 			  /* Domain-specific fields */
 			  
 			  `REGCNTY` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown county name]' COMMENT 'County',
 			  `SUBDIST` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown sub-district name]' COMMENT 'Sub-district',
 			  `PARISH` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown parish name]' COMMENT 'Parish',
-			  `PShare` DECIMAL(14,7) NOT NULL COMMENT 'Primary sector share of male workforce',
-			  `SecShare` DECIMAL(14,7) NOT NULL COMMENT 'Secondary sector\'s share of male workforce',
-			  `TShare` DECIMAL(14,7) NOT NULL COMMENT 'Tertiary sector share of male workforce',
-			  `AgShare` DECIMAL(14,7) NOT NULL COMMENT 'Agriculture share of male workforce',
-			  `MineShare` DECIMAL(14,7) NOT NULL COMMENT 'Mining share of male workforce',
-			  `CloShare` DECIMAL(14,7) NOT NULL COMMENT 'Clothing share of male workforce',
-			  `ShoeShare` DECIMAL(14,7) NOT NULL COMMENT 'Shoemaking share of male workforce',
-			  `MetShare` DECIMAL(14,7) NOT NULL COMMENT 'Metal trade share of male workforce',
-			  `TextShare` DECIMAL(14,7) NOT NULL COMMENT 'Textiles share of male workforce',
-			  `BldShare` DECIMAL(14,7) NOT NULL COMMENT 'Building and construction share of male workforce',
-			  `SelShare` DECIMAL(14,7) NOT NULL COMMENT 'Dealer and seller share of male workforce',
-			  `SPShare` DECIMAL(14,7) NOT NULL COMMENT 'Service and profession share of male workforce',
-			  `TraShare` DECIMAL(14,7) NOT NULL COMMENT 'Transport share of male workforce',
 		";
+		
+		# Add each data field
+		foreach ($this->settings['fields'] as $field => $attributes) {
+			if (!isSet ($attributes['general']) && ($field != '_')) {
+				$sql .= "\n\t\t\t  `{$field}` DECIMAL(14,7) NOT NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label']) . "',";
+			}
+		}
+		
+		# Return the SQL
+		return $sql;
 	}
 	
 	
