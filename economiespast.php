@@ -80,6 +80,12 @@ class economiespast extends onlineAtlas
 					'general' => true,
 				),
 				
+				'_' => array (
+					'label' => '[Show background map only]',
+					'description' => 'Removes data from the map, showing only the background',
+					'intervals' => '',
+				),
+				
 				// Data fields
 				'PShare' => array (
 					'label' => 'Primary sector share of male workforce',
@@ -145,12 +151,6 @@ class economiespast extends onlineAtlas
 					'label' => 'Transport share of male workforce',
 					'description' => '',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
-				),
-				
-				'_' => array (
-					'label' => '[Show background map only]',
-					'description' => 'Removes data from the map, showing only the background',
-					'intervals' => '',
 				),
 			),
 			
