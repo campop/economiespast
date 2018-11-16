@@ -195,7 +195,7 @@ class economiespast extends onlineAtlas
 		# Add each data field
 		foreach ($this->settings['fields'] as $field => $attributes) {
 			if (!isSet ($attributes['general']) && ($field != '_')) {
-				$sql .= "\n\t\t\t  `{$field}` DECIMAL(14,7) NOT NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label']) . "',";
+				$sql .= "\n\t\t\t  `{$field}` DECIMAL(14,7) NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label']) . "',";
 			}
 		}
 		
