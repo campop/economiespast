@@ -38,10 +38,10 @@ class economiespast extends onlineAtlas
 			'intervalsMode' => true,
 			
 			// Datasets
-			'datasets' => array (1600, 1660, 1710, 1755, 1785, 1851, 1861, 1881, 1911, /* 2001, */ 2011),
+			'datasets' => array (1600, 1660, 1710, 1755, 1785, 1851, 1861, 1881, 1891, 1901, 1911, 2011),
 			
 			// More detailed datasets when close in
-			'closeDatasets' => array (1851, 1861, 1881, 1901, 1911),
+			'closeDatasets' => array (1851, 1861, 1881, 1891, 1901, 1911),
 			'closeName' => 'parish',
 			'closeZoom' => 10,
 			'closeField' => 'PARISH',
