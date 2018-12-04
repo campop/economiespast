@@ -87,67 +87,67 @@ class economiespast extends onlineAtlas
 				),
 				
 				// Data fields
-				'PShare' => array (
+				'P' => array (
 					'label' => 'Primary sector share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
 				),
-				'SecShare' => array (
+				'S' => array (
 					'label' => 'Secondary sector share of male workforce',
 					'description' => "Secondary sector's share of male workforce",
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
 				),
-				'TShare' => array (
+				'T' => array (
 					'label' => 'Tertiary sector share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
 				),
-				'AgShare' => array (
+				'Ag' => array (
 					'label' => 'Agriculture share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
 				),
-				'MineShare' => array (
+				'Mine' => array (
 					'label' => 'Mining share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
 				),
-				'CloShare' => array (
+				'Clo' => array (
 					'label' => 'Clothing share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
 				),
-				'ShoeShare' => array (
+				'Shoe' => array (
 					'label' => 'Shoemaking share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20+',
 				),
-				'MetShare' => array (
+				'Met' => array (
 					'label' => 'Metal trade share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
 				),
-				'TextShare' => array (
+				'Text' => array (
 					'label' => 'Textiles share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60+',
 				),
-				'BldShare' => array (
+				'Bld' => array (
 					'label' => 'Building and construction share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-25, 25-30, 30+',
 				),
-				'SelShare' => array (
+				'Sel' => array (
 					'label' => 'Dealer and seller share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15+',
 				),
-				'SPShare' => array (
+				'SP' => array (
 					'label' => 'Service and profession share of male workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-30, 30-40, 40+',
 				),
-				'TraShare' => array (
+				'Tra' => array (
 					'label' => 'Transport share of male workforce',
 					'description' => '',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
