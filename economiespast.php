@@ -64,7 +64,7 @@ class economiespast extends onlineAtlas
 			),
 			
 			// Fields
-			'defaultField' => 'PShare',
+			'defaultField' => 'P',
 			'fields' => array (
 				
 				// General fields
