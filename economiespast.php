@@ -7,6 +7,12 @@ class economiespast extends onlineAtlas
 	# Function to assign defaults additional to the general application defaults
 	public function defaults ()
 	{
+		# Define unavailability
+		$unavailable = array (
+			'_F' => array (1851, 1861, 1881, 1891, 1901, 1911),
+			'_B' => array (1851, 1861, 1881, 1891, 1901, 1911),
+		);
+		
 		# Add implementation defaults
 		$defaults = array (
 			
@@ -50,6 +56,13 @@ class economiespast extends onlineAtlas
 			// Value representing 'Unknown' and the string it is converted to
 			'valueUnknown' => 1000,
 			
+			# Define variations suffixes list, as suffix => label
+			'variations' => array (
+				'_M' => 'Male',
+				'_F' => 'Female',
+				'_B' => 'Both',
+			),
+			
 			// Fields
 			'defaultField' => 'PShare',
 			'fields' => array (
@@ -88,69 +101,82 @@ class economiespast extends onlineAtlas
 				
 				// Data fields
 				'P' => array (
-					'label' => 'Primary sector share of male workforce',
+					'label' => 'Primary sector share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'unavailable' => $unavailable,
 				),
 				'S' => array (
-					'label' => 'Secondary sector share of male workforce',
-					'description' => "Secondary sector's share of male workforce",
+					'label' => 'Secondary sector share of adult workforce',
+					'description' => "Secondary sector's share of adult workforce",
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'unavailable' => $unavailable,
 				),
 				'T' => array (
-					'label' => 'Tertiary sector share of male workforce',
+					'label' => 'Tertiary sector share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'unavailable' => $unavailable,
 				),
 				'Ag' => array (
-					'label' => 'Agriculture share of male workforce',
+					'label' => 'Agriculture share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'unavailable' => $unavailable,
 				),
 				'Mine' => array (
-					'label' => 'Mining share of male workforce',
+					'label' => 'Mining share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
+					'unavailable' => $unavailable,
 				),
 				'Clo' => array (
-					'label' => 'Clothing share of male workforce',
+					'label' => 'Clothing share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
+					'unavailable' => $unavailable,
 				),
 				'Shoe' => array (
-					'label' => 'Shoemaking share of male workforce',
+					'label' => 'Shoemaking share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'unavailable' => $unavailable,
 				),
 				'Met' => array (
-					'label' => 'Metal trade share of male workforce',
+					'label' => 'Metal trade share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
+					'unavailable' => $unavailable,
 				),
 				'Text' => array (
-					'label' => 'Textiles share of male workforce',
+					'label' => 'Textiles share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60+',
+					'unavailable' => $unavailable,
 				),
 				'Bld' => array (
-					'label' => 'Building and construction share of male workforce',
+					'label' => 'Building and construction share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-25, 25-30, 30+',
+					'unavailable' => $unavailable,
 				),
 				'Sel' => array (
-					'label' => 'Dealer and seller share of male workforce',
+					'label' => 'Dealer and seller share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15+',
+					'unavailable' => $unavailable,
 				),
 				'SP' => array (
-					'label' => 'Service and profession share of male workforce',
+					'label' => 'Service and profession share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-30, 30-40, 40+',
+					'unavailable' => $unavailable,
 				),
 				'Tra' => array (
-					'label' => 'Transport share of male workforce',
+					'label' => 'Transport share of adult workforce',
 					'description' => '',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'unavailable' => $unavailable,
 				),
 			),
 			
@@ -192,10 +218,12 @@ class economiespast extends onlineAtlas
 			  `PARISH` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown parish name]' COMMENT 'Parish',
 		";
 		
-		# Add each data field
+		# Add each data field; NB cannot use $this->fieldsExpanded as databaseStructure() is executed before mainPreActions()/main()
 		foreach ($this->settings['fields'] as $field => $attributes) {
 			if (!isSet ($attributes['general']) && ($field != '_')) {
-				$sql .= "\n\t\t\t  `{$field}` DECIMAL(14,7) NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label']) . "',";
+				foreach ($this->settings['variations'] as $variationSuffix => $variationLabel) {
+					$sql .= "\n\t\t\t  `{$field}{$variationSuffix}` DECIMAL(14,7) NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label'] . ' (' . $variationLabel . ')') . "',";
+				}
 			}
 		}
 		
