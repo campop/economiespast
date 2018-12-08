@@ -57,6 +57,7 @@ class economiespast extends onlineAtlas
 			'valueUnknown' => 1000,
 			
 			# Define variations suffixes list, as suffix => label
+			'variationsLabel' => 'Gender',
 			'variations' => array (
 				'_M' => 'Male',
 				'_F' => 'Female',
@@ -65,6 +66,7 @@ class economiespast extends onlineAtlas
 			
 			// Fields
 			'defaultField' => 'P',
+			'defaultVariation' => '_B',
 			'fields' => array (
 				
 				// General fields
