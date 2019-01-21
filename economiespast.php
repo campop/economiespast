@@ -65,8 +65,8 @@ class economiespast extends onlineAtlas
 			),
 			
 			// Fields
-			'defaultField' => 'P',
-			'defaultVariation' => '_B',
+			'defaultField' => 'Sec',
+			'defaultVariation' => '_M',
 			'fields' => array (
 				
 				// General fields
