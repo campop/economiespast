@@ -46,6 +46,11 @@ class economiespast extends onlineAtlas
 			// Datasets
 			'datasets' => array (1600, 1660, 1710, 1755, 1785, 1851, 1861, 1881, 1891, 1901, 1911, 2011),
 			
+			// Defaults
+			'defaultDataset' => 1710,
+			'defaultField' => 'Sec',
+			'defaultVariation' => '_M',
+			
 			// More detailed datasets when close in
 			'closeDatasets' => array (1851, 1861, 1881, 1891, 1901, 1911),
 			'closeName' => 'parish',
@@ -65,8 +70,6 @@ class economiespast extends onlineAtlas
 			),
 			
 			// Fields
-			'defaultField' => 'Sec',
-			'defaultVariation' => '_M',
 			'fields' => array (
 				
 				// General fields
