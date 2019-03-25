@@ -183,6 +183,18 @@ class economiespast extends onlineAtlas
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
 					'unavailable' => $unavailable,
 				),
+				'Dom' => array (
+					'label' => 'Domestic service',
+					'description' => '',
+					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'unavailable' => $unavailable,
+				),
+				'LFPR' => array (
+					'label' => 'Labour force participation rate',
+					'description' => '',
+					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'unavailable' => $unavailable,
+				),
 			),
 			
 			// Colours based on: https://www.campop.geog.cam.ac.uk/research/projects/transport/data/population.html
