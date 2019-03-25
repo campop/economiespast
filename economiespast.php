@@ -49,7 +49,10 @@ class economiespast extends onlineAtlas
 			// Defaults
 			'defaultDataset' => 1710,
 			'defaultField' => 'Sec',
-			'defaultVariation' => '_M',
+			'defaultVariations' => array (
+				'Gender'	=> 'M',
+				'Age'		=> 'A',
+			),
 			
 			// More detailed datasets when close in
 			'closeDatasets' => array (1851, 1861, 1881, 1891, 1901, 1911),
@@ -62,11 +65,17 @@ class economiespast extends onlineAtlas
 			'valueUnknown' => 1000,
 			
 			# Define variations suffixes list, as suffix => label
-			'variationsLabel' => 'Gender',
 			'variations' => array (
-				'_M' => 'Male',
-				'_F' => 'Female',
-				'_B' => 'Both',
+				'Gender' => array (
+					'M' => 'Male',
+					'F' => 'Female',
+					'B' => 'Both',
+				),
+				'Age' => array (
+					'A' => 'Adults',
+					'OC' => 'Children age 13-14',
+					'YC' => 'Children age 10-12',
+				),
 			),
 			
 			// Fields
@@ -235,11 +244,16 @@ class economiespast extends onlineAtlas
 			  `PARISH` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown parish name]' COMMENT 'Parish',
 		";
 		
+		# Compile variations; although the same routine is done in onlineAtlas::fieldsVariationsProcessed() that is run after databaseStructure, so has to be repeated here
+		$variationsFlattened = application::array_key_combinations ($this->settings['variations'], '_', ' - ');
+		
 		# Add each data field; NB cannot use $this->fieldsExpanded as databaseStructure() is executed before mainPreActions()/main()
 		foreach ($this->settings['fields'] as $field => $attributes) {
 			if (!isSet ($attributes['general']) && ($field != '_')) {
-				foreach ($this->settings['variations'] as $variationSuffix => $variationLabel) {
-					$sql .= "\n\t\t\t  `{$field}{$variationSuffix}` DECIMAL(14,7) NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label'] . ' (' . $variationLabel . ')') . "',";
+				
+				# Work through the variations in combinations
+				foreach ($variationsFlattened as $suffix => $label) {
+					$sql .= "\n\t\t\t  `{$field}_{$suffix}` DECIMAL(14,7) NULL COMMENT '" . str_replace ("'", "\\'", $attributes['label'] . ' (' . $label . ')') . "',";
 				}
 			}
 		}
