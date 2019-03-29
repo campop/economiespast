@@ -73,8 +73,8 @@ class economiespast extends onlineAtlas
 				),
 				'Age' => array (
 					'A' => 'Adults',
-					'OC' => 'Children age 13-14',
-					'YC' => 'Children age 10-12',
+					'OC' => 'Children (13-14)',
+					'YC' => 'Children (10-12)',
 				),
 			),
 			
@@ -169,7 +169,7 @@ class economiespast extends onlineAtlas
 					'unavailable' => $unavailable,
 				),
 				'Bld' => array (
-					'label' => 'Building and construction share of adult workforce',
+					'label' => 'Building & construction share of adult workforce',
 					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-25, 25-30, 30+',
 					'unavailable' => $unavailable,
@@ -279,9 +279,17 @@ class economiespast extends onlineAtlas
 	
 	
 	# Home page
-	public function home ($aboutPath = false)
+	public function home ($aboutPath = false, $additionalCss = false)
 	{
-		return parent::home ($this->extendedApplicationRoot);
+		# Define additional CSS
+		$additionalCss = '
+			nav {width: 380px;}
+			.leaflet-control-layers, .leaflet-control-attribution, .summary {right: 380px;}
+			ul.rangelabels.smalllabels li {font-size: 0.8em; border-right: 1px solid transparent;}
+			.radiobuttons div {margin-bottom: 4px;}
+		';
+		
+		return parent::home ($this->extendedApplicationRoot, $additionalCss);
 	}
 	
 	
