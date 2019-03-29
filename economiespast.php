@@ -79,6 +79,7 @@ class economiespast extends onlineAtlas
 			),
 			
 			// Fields
+			'expandableHeadings' => false,
 			'fields' => array (
 				
 				// General fields
@@ -301,7 +302,6 @@ class economiespast extends onlineAtlas
 			nav {width: 380px;}
 			.leaflet-control-layers, .leaflet-control-attribution, .summary {right: 380px;}
 			ul.rangelabels.smalllabels li {font-size: 0.8em; border-right: 1px solid transparent;}
-			.radiobuttons div {margin-bottom: 4px;}
 			nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
 		';
 		
