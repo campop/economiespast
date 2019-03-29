@@ -186,15 +186,15 @@ class economiespast extends onlineAtlas
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-30, 30-40, 40+',
 					'unavailable' => $unavailable,
 				),
-				'Tra' => array (
-					'label' => 'Transport share of workforce',
-					'description' => 'The share of the labour force in transport',
-					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
-					'unavailable' => $unavailable,
-				),
 				'Dom' => array (
 					'label' => 'Domestic service',
 					'description' => 'The share of the labour force in domestic service',
+					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'unavailable' => $unavailable,
+				),
+				'Tra' => array (
+					'label' => 'Transport share of workforce',
+					'description' => 'The share of the labour force in transport',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
 					'unavailable' => $unavailable,
 				),
