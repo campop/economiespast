@@ -47,8 +47,8 @@ class economiespast extends onlineAtlas
 			'datasets' => array (1600, 1660, 1710, 1755, 1785, 1851, 1861, 1881, 1891, 1901, 1911, 2011),
 			
 			// Defaults
-			'defaultDataset' => 1710,
-			'defaultField' => 'Sec',
+			'defaultDataset' => 1851,
+			'defaultField' => 'P',
 			'defaultVariations' => array (
 				'Gender'	=> 'M',
 				'Age'		=> 'A',
