@@ -118,90 +118,105 @@ class economiespast extends onlineAtlas
 					'label' => 'Primary sector share of workforce',
 					'description' => 'The share of the labour force in the primary sector',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
-					'unavailable' => $unavailable,
-				),
-				'Sec' => array (
-					'label' => 'Secondary sector share of workforce',
-					'description' => 'The share of the labour force in the secondary sector',
-					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
-					'unavailable' => $unavailable,
-				),
-				'T' => array (
-					'label' => 'Tertiary sector share of workforce',
-					'description' => 'The share of the labour force in the tertiary sector',
-					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'grouping' => 'Primary',
 					'unavailable' => $unavailable,
 				),
 				'Ag' => array (
 					'label' => 'Agriculture share of workforce',
 					'description' => 'The share of the labour force in agriculture',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'grouping' => 'Primary',
 					'unavailable' => $unavailable,
 				),
 				'Mine' => array (
 					'label' => 'Mining share of workforce',
 					'description' => 'The share of the labour force in mining',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
+					'grouping' => 'Primary',
+					'unavailable' => $unavailable,
+				),
+				'Sec' => array (
+					'label' => 'Secondary sector share of workforce',
+					'description' => 'The share of the labour force in the secondary sector',
+					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'grouping' => 'Secondary',
 					'unavailable' => $unavailable,
 				),
 				'Clo' => array (
 					'label' => 'Clothing share of workforce',
 					'description' => 'The share of the labour force employed in making clothes',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
+					'grouping' => 'Secondary',
 					'unavailable' => $unavailable,
 				),
 				'Shoe' => array (
 					'label' => 'Shoemaking share of workforce',
 					'description' => 'The share of the labour force employed in shoemaking',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'grouping' => 'Secondary',
 					'unavailable' => $unavailable,
 				),
 				'Met' => array (
 					'label' => 'Metal trade share of workforce',
 					'description' => 'The share of the labour force employed in metal manufacture',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20-30, 30+',
+					'grouping' => 'Secondary',
 					'unavailable' => $unavailable,
 				),
 				'Text' => array (
 					'label' => 'Textiles share of workforce',
 					'description' => 'The share of the labour force employed in textiles',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60+',
+					'grouping' => 'Secondary',
 					'unavailable' => $unavailable,
 				),
 				'Bld' => array (
 					'label' => 'Building and construction share of workforce',
 					'description' => 'The share of the labour force employed in construction',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-25, 25-30, 30+',
+					'grouping' => 'Secondary',
+					'unavailable' => $unavailable,
+				),
+				'T' => array (
+					'label' => 'Tertiary sector share of workforce',
+					'description' => 'The share of the labour force in the tertiary sector',
+					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
+					'grouping' => 'Tertiary',
 					'unavailable' => $unavailable,
 				),
 				'Sel' => array (
 					'label' => 'Dealer and seller share of workforce',
 					'description' => 'The share of the labour force employed in wholesale and retail employment',
 					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15+',
+					'grouping' => 'Tertiary',
 					'unavailable' => $unavailable,
 				),
 				'SP' => array (
 					'label' => 'Service and profession share of workforce',
 					'description' => 'The share of the labour force employed in miscellaneous services and professions',
 					'intervals' => '0, 0-5, 5-10, 10-15, 15-20, 20-30, 30-40, 40+',
+					'grouping' => 'Tertiary',
 					'unavailable' => $unavailable,
 				),
 				'Dom' => array (
 					'label' => 'Domestic service',
 					'description' => 'The share of the labour force in domestic service',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'grouping' => 'Tertiary',
 					'unavailable' => $unavailable,
 				),
 				'Tra' => array (
 					'label' => 'Transport share of workforce',
 					'description' => 'The share of the labour force in transport',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'grouping' => 'Tertiary',
 					'unavailable' => $unavailable,
 				),
 				'LFPR' => array (
 					'label' => 'Labour force participation rate',
 					'description' => 'The labour force participation rate',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'grouping' => 'Participation rate',
 					'unavailable' => $unavailable,
 				),
 			),
@@ -287,6 +302,7 @@ class economiespast extends onlineAtlas
 			.leaflet-control-layers, .leaflet-control-attribution, .summary {right: 380px;}
 			ul.rangelabels.smalllabels li {font-size: 0.8em; border-right: 1px solid transparent;}
 			.radiobuttons div {margin-bottom: 4px;}
+			nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
 		';
 		
 		return parent::home ($this->extendedApplicationRoot, $additionalCss);
