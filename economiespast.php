@@ -122,7 +122,7 @@ class economiespast extends onlineAtlas
 				),
 				'Sec' => array (
 					'label' => 'Secondary sector share of adult workforce',
-					'description' => "Secondary sector's share of adult workforce",
+					'description' => '',
 					'intervals' => '0, 0-5, 5-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90-100',
 					'unavailable' => $unavailable,
 				),
