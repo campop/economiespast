@@ -115,6 +115,12 @@ class economiespast extends onlineAtlas
 				),
 				
 				// Data fields
+				'LFPR' => array (
+					'label' => 'Labour force participation rate',
+					'description' => 'The labour force participation rate',
+					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'unavailable' => $unavailable,
+				),
 				'P' => array (
 					'label' => 'Primary sector share of workforce',
 					'description' => 'The share of the labour force in the primary sector',
@@ -211,13 +217,6 @@ class economiespast extends onlineAtlas
 					'description' => 'The share of the labour force in transport',
 					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
 					'grouping' => 'Tertiary',
-					'unavailable' => $unavailable,
-				),
-				'LFPR' => array (
-					'label' => 'Labour force participation rate',
-					'description' => 'The labour force participation rate',
-					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
-					'grouping' => 'Participation rate',
 					'unavailable' => $unavailable,
 				),
 			),
