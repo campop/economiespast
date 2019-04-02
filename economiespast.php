@@ -118,7 +118,7 @@ class economiespast extends onlineAtlas
 				'LFPR' => array (
 					'label' => 'Labour force participation rate',
 					'description' => 'The labour force participation rate',
-					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'intervals' => '0, 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-100',
 					'unavailable' => $unavailable,
 				),
 				'P' => array (
