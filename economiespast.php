@@ -222,19 +222,20 @@ class economiespast extends onlineAtlas
 			),
 			
 			// Colours based on: https://www.campop.geog.cam.ac.uk/research/projects/transport/data/population.html
+			'colourUnknown' => '#9c9c9c',
 			'colourStopsIntervalsConsistent' => false,
 			'colourStops' => array (
 				'#ffffff',
-				'#ffffbe',
-				'#ffebaf',
 				'#ffff73',
-				'#d1ff73',
-				'#a3ff73',
+				'#d3ffbe',
+				'#55ff00',
+				'#ffd37f',
 				'#ffaa00',
-				'#ff7f7f',
-				'#e64c00',
+				'#ff5500',
+				'#e60000',
 				'#df73ff',
-				'#4c0073',
+				'#8400a8',
+				'#730000',
 				'#000000',
 			),
 		);
