@@ -47,7 +47,7 @@ class economiespast extends onlineAtlas
 			'intervalsMode' => true,
 			
 			// Datasets
-			'datasets' => array (1600, 1660, 1710, 1755, 1785, 1851, 1861, 1881, 1891, 1901, 1911, 2011),
+			'datasets' => array (1600, 1660, 1710, 1755, 1785, 1817, 1851, 1861, 1881, 1891, 1901, 1911, 2011),
 			
 			// Defaults
 			'defaultDataset' => 1851,
