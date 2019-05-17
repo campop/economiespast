@@ -232,7 +232,7 @@ class economiespast extends onlineAtlas
 					'label' => 'Transport',
 					'description'           => 'The share of the labour force in transport (%)',
 					'descriptionLegendHtml' => 'The share of the labour force in transport' . $descriptionLegendSuffix,
-					'intervals' => '0-2, 2-5, 5-10, 10-15, 15-20, 20+',
+					'intervals' => '0, 0-2, 2-5, 5-10, 10-15, 15-20, 20+',
 					'grouping' => 'Tertiary - Labour force share',
 					'unavailable' => $unavailable,
 				),
