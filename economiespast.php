@@ -66,6 +66,7 @@ class economiespast extends onlineAtlas
 			
 			// Value representing 'Unknown' and the string it is converted to
 			'valueUnknown' => 1000,
+			'valueUnknownString' => 'No data',
 			
 			# Define variations suffixes list, as suffix => label
 			'variations' => array (
