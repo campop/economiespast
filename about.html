@@ -43,3 +43,115 @@
 <p>High-resolution colour PDFs of maps are available on the <a href="/resources/">Resources</a> page. These can be printed out (use a colour printer and set the printer to maximum quality/resolution) and, if possible, print on A3 paper. These maps are at RSD level for 1600-1785 and parish level for 1851-1911.</p>
 
 <p>For the provenance of the boundary data used for this site see the <a href="/acknowledgements/">Acknowledgements</a> page.</p>
+
+<br />
+<hr />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(function() {
+		
+		// Pre-process the page to add a class to each h3 block, to match the structure given at: https://jqueryui.com/accordion/
+		$('body.about #toggle h3').each(function() {
+			$(this).prepend ('<i class="fa fa-chevron-circle-right iconrotate"></i> ');
+			$(this).nextUntil('h2, h3').wrapAll('<div class="graybox" />');	// See: http://stackoverflow.com/questions/7968303/wrapping-a-series-of-elements-between-two-h2-tags-with-jquery
+		});
+		
+		// Simple toggle, as jQuery Accordion seems not to work; see: http://www.jacklmoore.com/notes/jquery-accordion-tutorial/
+		$('body.about #toggle div').hide ();
+		$('body.about #toggle h3').click(function(e){
+			e.preventDefault();
+			$(this).next('div').slideToggle();
+	
+			if ($('i', this).css('transform') == 'none') {
+				$('i', this).css('transform', 'rotate(90deg)');
+			} else {
+				$('i', this).css('transform', 'none');
+			}
+		});
+	});
+	
+</script>
+
+<div id="toggle">
+
+
+<h2>Primary - Labour force share</h2>
+
+<h3 class="P">Primary sector</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Ag">Agriculture</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Mine">Mining</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h2>Secondary - Labour force share</h2>
+
+<h3 class="Sec">Secondary sector</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Clo">Clothing</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Shoe">Shoemaking</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Met">Metal trade</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Text">Textiles</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Bld">Building and construction</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h2>Tertiary - Labour force share</h2>
+
+<h3 class="T">Tertiary sector</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Sel">Dealer and seller</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="SP">Service and profession</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Dom">Domestic service</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+<h3 class="Tra">Transport</h3>
+
+<p><em>Information to follow.</em></p>
+
+
+</div>
