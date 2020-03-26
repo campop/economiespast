@@ -4,10 +4,10 @@
 #   
 #   # Online atlas
 #   Include /path/to/online-atlas/.httpd.conf.extract.txt
-#   Use MacroEconomiesPast "/public-url/economiespast" "/path/to/online-atlas/:/path/to/smarty/:/path/to/php/libraries/" "/path/to/economiespast" "/path/to/online-atlas"
+#   Use MacroEconomiesPast "/public-url/economiespast" "/path/to/economiespast" "/path/to/online-atlas" "/path/to/online-atlas/:/path/to/smarty/:/path/to/php/libraries/"
 
 
-<Macro MacroEconomiesPast $applicationBaseUrl $includePath $localRepoPath $baseRepoPath>
+<Macro MacroEconomiesPast $applicationBaseUrl $localRepoPath $baseRepoPath $includePath>
 	
 	# Load base codebase
 	Include $baseRepoPath/.httpd.conf.extract.txt
