@@ -273,9 +273,9 @@ class economiespast extends onlineAtlas
 		$sql = "
 			  /* Domain-specific fields */
 			  
-			  `REGCNTY` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown county name]' COMMENT 'County',
-			  `SUBDIST` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown sub-district name]' COMMENT 'Sub-district',
-			  `PARISH` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Unknown parish name]' COMMENT 'Parish',
+			  `REGCNTY` VARCHAR(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '[Unknown county name]' COMMENT 'County',
+			  `SUBDIST` VARCHAR(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '[Unknown sub-district name]' COMMENT 'Sub-district',
+			  `PARISH` VARCHAR(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '[Unknown parish name]' COMMENT 'Parish',
 		";
 		
 		# Compile variations; although the same routine is done in onlineAtlas::fieldsVariationsProcessed() that is run after databaseStructure, so has to be repeated here
