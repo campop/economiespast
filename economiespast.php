@@ -40,8 +40,11 @@ class economiespast extends onlineAtlas
 				. '<p>The site enables you to explore changing patterns of work from 1600 - 2011.</p>'
 				. '<p>Please note that various improvements are still being made to the site.</p>',
 			
-			// Download filename base
+			// Download filename base, i.e. CSV export
 			'downloadFilenameBase' => false,
+			
+			// PDF map links
+			'pdfLink' => true,
 			
 			// Send intervals rather than exact values
 			'intervalsMode' => true,
