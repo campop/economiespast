@@ -322,9 +322,8 @@ class economiespast extends onlineAtlas
 		$additionalCss = '
 			nav {width: 380px;}
 			.leaflet-control-layers, .leaflet-control-attribution, .summary {right: 380px;}
-			ul.rangelabels.smalllabels li {font-size: 0.8em; border-right: 1px solid transparent;}
+			ul.rangelabels.smalllabels li {font-size: 0.69em; border-right: 2px solid transparent; transform: rotate(-25deg);}
 			nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
-			ul.rangelabels.smalllabels li {_font-size: 0.8em; border-right: 2px solid transparent; transform: rotate(-25deg);}
 		';
 		
 		return parent::home ($this->extendedApplicationRoot, $additionalCss);
