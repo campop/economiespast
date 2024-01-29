@@ -54,9 +54,9 @@ class economiespast extends onlineAtlas
 			
 			// Defaults
 			'defaultDataset' => 1851,
-			'defaultField' => 'P',
+			'defaultField' => 'LFPR',
 			'defaultVariations' => array (
-				'Gender'	=> 'M',
+				'Gender'	=> 'F',
 				'Age'		=> 'A',
 			),
 			
