@@ -40,6 +40,9 @@ class economiespast extends onlineAtlas
 				. '<p>The site enables you to explore changing patterns of work from 1600 - 2011.</p>'
 				. '<p>Please note that various improvements are still being made to the site.</p>',
 			
+			// About page
+			'aboutFile' => $_SERVER['DOCUMENT_ROOT'] . '/about/index.html',
+			
 			// Download filename base, i.e. CSV export
 			'downloadFilenameBase' => false,
 			
@@ -316,7 +319,7 @@ class economiespast extends onlineAtlas
 	
 	
 	# Home page
-	public function home ($aboutPath = false, $additionalCss = false)
+	public function home ($additionalCss = false)
 	{
 		# Define additional CSS
 		$additionalCss = '
@@ -326,7 +329,7 @@ class economiespast extends onlineAtlas
 			#onlineatlas nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
 		';
 		
-		return parent::home ($this->extendedApplicationRoot, $additionalCss);
+		return parent::home ($additionalCss);
 	}
 	
 	
