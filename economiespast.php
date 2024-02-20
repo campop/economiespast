@@ -320,10 +320,10 @@ class economiespast extends onlineAtlas
 	{
 		# Define additional CSS
 		$additionalCss = '
-			nav {width: 380px;}
-			.leaflet-control-layers, .leaflet-control-attribution, .summary {right: 380px;}
-			ul.rangelabels.smalllabels li {font-size: 0.69em; border-right: 2px solid transparent; transform: rotate(-25deg);}
-			nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
+			#onlineatlas nav {width: 380px;}
+			#onlineatlas .leaflet-control-layers, #onlineatlas .leaflet-control-attribution, #onlineatlas .summary {right: 380px;}
+			#onlineatlas ul.rangelabels.smalllabels li {font-size: 0.69em; border-right: 2px solid transparent; transform: rotate(-25deg);}
+			#onlineatlas nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
 		';
 		
 		return parent::home ($this->extendedApplicationRoot, $additionalCss);
