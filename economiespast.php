@@ -20,7 +20,7 @@ class economiespast extends onlineAtlas
 		$defaults = array (
 			
 			// Application name
-			'applicationName' => 'Economies Past',
+			'applicationName' => 'Economies Past map',
 			'pageHeader' => 'Economies Past <img src="' . $this->baseUrl . '/images/beta.png" height="50" />',
 			
 			// Database
