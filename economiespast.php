@@ -323,6 +323,9 @@ class economiespast extends onlineAtlas
 		# Define additional CSS
 		$additionalCss = '
 			#onlineatlas nav {width: 380px;}
+			@media only screen and (min-width: 320px) and (max-width: 768px) {
+				#onlineatlas nav {width: 330px;}	/* Default */
+			}
 			#onlineatlas .leaflet-control-layers, #onlineatlas .leaflet-control-attribution, #onlineatlas .summary {right: 380px;}
 			#onlineatlas ul.rangelabels.smalllabels li {font-size: 0.69em; outline-right: 0; transform: rotate(-25deg);}
 			#onlineatlas nav form div.radiobuttons h4 {margin-top: 0.5em; margin-bottom: 0.2em;}
