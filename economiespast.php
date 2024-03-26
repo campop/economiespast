@@ -27,9 +27,6 @@ class economiespast extends onlineAtlas
 			'username' => 'economiespast',
 			'password' => NULL,
 			
-			// Style
-			'bodyClass' => 'campl-theme-0',
-			
 			// Geocoder
 			'geocoderApiKey' => NULL,		// Obtain at https://www.cyclestreets.net/api/apply/
 			
