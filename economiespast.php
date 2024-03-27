@@ -20,7 +20,7 @@ class economiespast extends onlineAtlas
 			
 			// Application name
 			'applicationName' => 'Economies Past map',
-			'pageHeader' => 'Economies Past <img src="' . $this->baseUrl . '/images/beta.png" height="50" />',
+			'pageHeader' => 'Economies Past map',
 			
 			// Database
 			'database' => 'economiespast',
@@ -33,8 +33,7 @@ class economiespast extends onlineAtlas
 			// First run message
 			'firstRunMessageHtml' =>
 				  '<p><strong>Welcome to Economies Past, from CAMPOP</strong></p>'
-				. '<p>The site enables you to explore changing patterns of work from 1600 - 2011.</p>'
-				. '<p>Please note that various improvements are still being made to the site.</p>',
+				. '<p>The site enables you to explore changing patterns of work from 1600 - 2011.</p>',
 			
 			// About page
 			'aboutFile' => $_SERVER['DOCUMENT_ROOT'] . '/about/index.html',
