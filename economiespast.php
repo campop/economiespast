@@ -7,6 +7,7 @@ class economiespast extends onlineAtlas
 	public function defaults ()
 	{
 		# Define unavailability
+		#!# Not currently supported
 		$unavailable = array (
 			'_F' => array (1851, 1861, 1881, 1891, 1901, 1911),
 			'_B' => array (1851, 1861, 1881, 1891, 1901, 1911),
