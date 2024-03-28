@@ -4,8 +4,17 @@
     "type": "project",
     "license": "GPL-3.0-only",
     "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../online-atlas/",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
-        "campop/online-atlas": "^1.0.2"
+        "campop/online-atlas": "@dev"
     },
     "autoload": {
         "files": ["economiespast.php"]
