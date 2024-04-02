@@ -44,6 +44,7 @@ class economiespast extends onlineAtlas
 			
 			// PDF map links
 			'pdfLink' => true,
+			'pdfBaseUrl' => '/resources/parish/',
 			
 			// Send intervals rather than exact values
 			'intervalsMode' => true,
