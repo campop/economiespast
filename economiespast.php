@@ -121,6 +121,15 @@ class economiespast extends onlineAtlas
 					'intervals' => '',
 				),
 				
+				// Static (simple toggle) layers
+				'coalfields' => array (
+					'label' => 'Exposed coalfields',
+					'description' => 'Areas where coal seams crop out at/near the ground, making coal easiest to discover and mine',
+					'intervals' => false,
+					'static' => 'coalfields.geojson',	// Saved to exports-tmp
+					'colour' => '#333',
+				),
+				
 				// Data fields
 				'LFPR' => array (
 					'label' => 'Labour force participation rate',
@@ -286,7 +295,7 @@ class economiespast extends onlineAtlas
 		
 		# Add each data field; NB cannot use $this->fieldsExpanded as databaseStructure() is executed before mainPreActions()/main()
 		foreach ($this->settings['fields'] as $field => $attributes) {
-			if (!isSet ($attributes['general']) && ($field != '_')) {
+			if (!isSet ($attributes['general']) && ($field != '_') && (!isSet ($field['static']))) {
 				
 				# Work through the variations in combinations
 				foreach ($variationsFlattened as $suffix => $label) {
