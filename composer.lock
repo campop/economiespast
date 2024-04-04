@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1b006486341d727f1f2a392bfae1d33",
+    "content-hash": "979ab0e07d2e68289e50a74f6a6a7ebb",
     "packages": [
         {
             "name": "campop/online-atlas",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/campop/online-atlas.git",
-                "reference": "93acff92a23893c3f992e29dbdba83a94f91bac4"
+                "reference": "596acfb1a6dde078a23c1d0432b0bc0c1f3cfa08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/campop/online-atlas/zipball/93acff92a23893c3f992e29dbdba83a94f91bac4",
-                "reference": "93acff92a23893c3f992e29dbdba83a94f91bac4",
+                "url": "https://api.github.com/repos/campop/online-atlas/zipball/596acfb1a6dde078a23c1d0432b0bc0c1f3cfa08",
+                "reference": "596acfb1a6dde078a23c1d0432b0bc0c1f3cfa08",
                 "shasum": ""
             },
             "require": {
@@ -37,9 +37,9 @@
             "description": "Online atlas",
             "support": {
                 "issues": "https://github.com/campop/online-atlas/issues",
-                "source": "https://github.com/campop/online-atlas/tree/v1.0.4"
+                "source": "https://github.com/campop/online-atlas/tree/v1.0.5"
             },
-            "time": "2024-04-03T15:28:54+00:00"
+            "time": "2024-04-04T14:28:04+00:00"
         },
         {
             "name": "camunigeography/camunidata",
