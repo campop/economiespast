@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c91a38cc2c0ce8670c731cd011afde6",
+    "content-hash": "7b9b4cc9fad172311f5d1ac1d9839882",
     "packages": [
         {
             "name": "campop/online-atlas",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/campop/online-atlas.git",
-                "reference": "b313e14f62093770a9bde8388f958cbeb75f1280"
+                "reference": "07501f1d536a4108bd8709d5b933809f1a097cc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/campop/online-atlas/zipball/b313e14f62093770a9bde8388f958cbeb75f1280",
-                "reference": "b313e14f62093770a9bde8388f958cbeb75f1280",
+                "url": "https://api.github.com/repos/campop/online-atlas/zipball/07501f1d536a4108bd8709d5b933809f1a097cc3",
+                "reference": "07501f1d536a4108bd8709d5b933809f1a097cc3",
                 "shasum": ""
             },
             "require": {
                 "libpurecontent/application": "^1.9",
-                "libpurecontent/frontcontrollerapplication": "^1.13"
+                "libpurecontent/frontcontrollerapplication": "^1.13.4"
             },
             "type": "library",
             "autoload": {
@@ -37,9 +37,9 @@
             "description": "Online atlas",
             "support": {
                 "issues": "https://github.com/campop/online-atlas/issues",
-                "source": "https://github.com/campop/online-atlas/tree/v1.0.6"
+                "source": "https://github.com/campop/online-atlas/tree/v1.0.7"
             },
-            "time": "2024-04-04T15:51:34+00:00"
+            "time": "2024-04-04T17:30:23+00:00"
         },
         {
             "name": "camunigeography/camunidata",
@@ -241,16 +241,16 @@
         },
         {
             "name": "libpurecontent/frontcontrollerapplication",
-            "version": "v1.13.3",
+            "version": "v1.13.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/libpurecontent/frontcontrollerapplication.git",
-                "reference": "5458fb9d59d9c854d3b9ff4ecae8b1c2c3a0cf41"
+                "reference": "1e344e4b30bc53c27aab46ed6bad1d84910880bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/libpurecontent/frontcontrollerapplication/zipball/5458fb9d59d9c854d3b9ff4ecae8b1c2c3a0cf41",
-                "reference": "5458fb9d59d9c854d3b9ff4ecae8b1c2c3a0cf41",
+                "url": "https://api.github.com/repos/libpurecontent/frontcontrollerapplication/zipball/1e344e4b30bc53c27aab46ed6bad1d84910880bb",
+                "reference": "1e344e4b30bc53c27aab46ed6bad1d84910880bb",
                 "shasum": ""
             },
             "require": {
@@ -281,9 +281,9 @@
             "description": "PHP library frontControllerApplication within the pureContent library suite",
             "support": {
                 "issues": "https://github.com/libpurecontent/frontcontrollerapplication/issues",
-                "source": "https://github.com/libpurecontent/frontcontrollerapplication/tree/v1.13.3"
+                "source": "https://github.com/libpurecontent/frontcontrollerapplication/tree/v1.13.4"
             },
-            "time": "2024-03-04T12:03:29+00:00"
+            "time": "2024-04-04T16:24:21+00:00"
         },
         {
             "name": "libpurecontent/image",
