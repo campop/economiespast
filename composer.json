@@ -11,7 +11,7 @@
         "files": ["economiespast.php"]
     },
     "scripts": {
-        "post-update-cmd": [
+        "post-autoload-dump": [
             "sudo chown -R www-data vendor/campop/online-atlas/exports-tmp/"
         ]
     }
